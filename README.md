@@ -39,3 +39,9 @@ Terraform
             use the GitHub provider Pull Requests data source to list all Pull Requests, 
             and then provision an on-demand preview environment for each Pull Request
             
+        Refreshing data sources
+            By default, Terraform will refresh all data sources before creating a plan. 
+            You can also explicitly refresh all data sources by running terraform refresh.
+
+            Occasionally you’ll have data sources that change very often and would like to keep your resources in sync with those changes. 
+            The easiest way to achieve this is to just run Terraform every few minutes or so, do a refresh, and apply all resulting changes.
